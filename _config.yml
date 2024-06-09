@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-url:                   'https://ibienenwoko.com'
+url:                   'https://farisayi_data.com'
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -20,7 +20,7 @@ baseurl:               ''
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Ibiene Obuoforibo
+title:                 Farisayi Dakwa
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -28,9 +28,9 @@ description:           >
   Portfolio website/blog for all things data. 
 
 # A shorter description for the sidebar.
-tagline:               Engineer <br> 
+tagline:               Natural Scientist <br> 
                        Data Scientist <br>  
-                       Curious Human <br> 
+                       Writer <br> 
                        <br>   
                        
 
@@ -40,26 +40,26 @@ keywords:              ['Portfolio', 'Data Science', 'Machine Learning', 'Data',
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/ib-bc-square.png
+logo:                  /assets/img/tempopic.jpg
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                Ibiene Obuoforibo
-  email:               ib.obuoforibo@outlook.com
+  name:                Farisayi Dakwa
+  email:               fariedakwa.fd@gmail.com
   # # Used by `jekyll-seo-tag`:
-  twitter:             IbieneO
+  twitter:             
 
 # Add links to the sidebar.
 menu:
   - title:             Portfolio
-    url:               /projects/
-  - title:             Blog
     url:               /blog/
   - title:             Résumé
     url:               /resume/
   - title:             About Me
     url:               /about/
+# - title:             Portfolio
+  #  url:               /projects/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if applicable), etc..
@@ -72,7 +72,7 @@ menu:
    # url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2022. Ibiene Obuoforibo.
+copyright:             © 2022. Farisayi Dakwa.
 # Format of the permalinks
 permalink:             /blog/:title/
 # /blog/:categories/:year-:month-:day-:title/
@@ -93,7 +93,7 @@ theme: jekyll-theme-hydejack
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-blueswirl.jpg
+accent_image:          /assets/img/jonatan-pie.png
 accent_color:          rgb(40,105,166)
 #rgb(79,177,186)
 
@@ -364,7 +364,7 @@ google_site_verification: G-SVR4DFNBKV
 
 # Used for twitter cards
 twitter:
-   username:            IbieneO
+   username:            
 
 # Used for facebook open graph
 # facebook:
@@ -374,11 +374,11 @@ twitter:
 
 # Used on index and about sites
 social:
-  name:                Ibiene Obuoforibo
+  name:                Farisayi Dakwa
 links:
-- https://twitter.com/IbieneO
-- https://github.com/ibiene-ds
-- https://www.linkedin.com/in/ibiene
+
+- https://github.com/fariedd
+- https://linkedin.com/in/farisayi-e-dakwa/
 
 
 # Plugin Configs

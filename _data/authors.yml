@@ -2,19 +2,22 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              Ibiene Obuoforibo
-  email:             ib.obuoforibo@outlook.com
+  name:              Farisayi Dakwa
+  email:             fariedakwa.fd@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Ibiene is a Reservoir Engineer who loves **everything data**! At any given time, you can find her consuming fantasy novels or sci/fi tv-shows,
-    eating, singing or working out. She would like to play piano someday :)
+    Farisayi is a Natural Scientist and data scientist/machine learning enthusiast. He describes himself as a
+    curious thinker and writer- a stream of consciousness, who enjoys everything data and tech. Hobbies include swimming, chess, camping (offroad driving) all that while consuming a ridiculous amount of books (probably reading fiction, Chimamanda is his favourite author) 
+ 
+
+    
   
 
   # This photo will be used in the about section
   picture:
-    path:            /assets/img/ib-bc-square.png
+    path:            /assets/img/Fatso_wake.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     # srcset:
       # 1x:            https://placehold.it/128x128
@@ -24,10 +27,10 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    email:            ib.obuoforibo@outlook.com
-    linkedin:         ibiene
-    github:           ibiene-ds
-    twitter:          IbieneO
+    email:            fariedakwa.fd@gmail.com
+    linkedin:         farisayi-e-dakwa
+    github:           fariedd
+    #twitter:          IbieneO
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -66,15 +69,14 @@ author1:
 
 # Another author (optional)
 author2:
-  name:              <Ibiene> <Obuoforibo>
-  email:             <ib.obuoforibo@outlook.com>
+  name:              <Farisayi> <Dakwa>
+  email:             <fariedakwa.fd@gmail.com>
   about:             |
-    Ibiene is a Petroleum Engineer and budding data scientist/machine learning engineer. She describes herself as a
-    curious learner and fitness geek. 
-    Hobbies include consuming a ridiculous amount of fantasy novels and... Dreams? Play piano and sing simultaneously -
-    got one down, the other is going terribly. 
+    Farisayi is a Natural Scientist who fell inlove with **everything data**! behind a white Nissan Hardbody NP300, tracking tagged buffaloes, where he learnt to analyse live telemetry data
+    and determine species distribution of large herbivores in Hwange National park.  At any given time, you can find him buried behind a book (probably reading fiction, Chimamanda is his favourite author),
+    swimming, chess or writing about life (a stream of consciousness). He would like to publish a book, a song and a short movie oneday :)
   
 
   picture:           https://placehold.it/128x128
-  twitter:           <IbieneO>
-  github:            <ibiene-ds>
+  #twitter:           <IbieneO>
+  github:            <fariedd>
