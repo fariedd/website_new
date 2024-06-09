@@ -2,6 +2,6 @@
 layout: grid
 title: Posts
 description: >
-grouped: true
+no_groups: true
 sitemap: false
 ---
