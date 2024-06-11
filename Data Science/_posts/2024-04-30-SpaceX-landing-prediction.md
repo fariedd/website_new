@@ -12,8 +12,8 @@ sitemap: true
 hide_last_modified: true
 ---
 
-[![](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](https://github.com/ibiene-ds/image-search-engine/blob/master/101_cnn_image_search_engine.ipynb)
-[![](https://img.shields.io/badge/GitHub-View_in_GitHub-blue?logo=GitHub)](https://github.com/ibiene-ds/image-search-engine)
+
+[![](https://img.shields.io/badge/GitHub-View_in_GitHub-blue?logo=GitHub)](https://github.com/fariedd/IBM-DataScience-SpaceX-Capestone)
 
 **Failure is an option here. If things are not failing, you are not innovating enough** ~ *Elon Musk*.
 * toc

@@ -10,8 +10,7 @@ My name is **Farisayi** _(fah-rii-sai-ee)_. I am a Natural Scientist that loves 
 
 Welcome! l hope you enjoy your visit... 
 
-*Have questions about your data? l have answers.*
-*How can l help you?*
+
 
 
 ## Latest Projects
