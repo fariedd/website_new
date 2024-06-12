@@ -29,6 +29,9 @@ gem "kramdown-math-katex"
 # A JavaScript runtime for ruby that helps with running the katex gem above.
 gem "duktape"
 
+#compress images so website can load faster
+gem 'jekyll-compress-images'
+
 # Fixes `jekyll serve` in ruby 3
 gem "webrick"
 
