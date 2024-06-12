@@ -93,7 +93,7 @@ theme: jekyll-theme-hydejack
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/jonatan-pie.png
+accent_image:          /assets/img/jonatan-pie_compressed.jpg
 accent_color:          rgb(40,105,166)
 #rgb(79,177,186)
 
