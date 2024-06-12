@@ -197,6 +197,7 @@ kramdown:
 # ----------------------------------------------------------------------------------------
 # These settings are specific to Hydejack.
 
+
 hydejack:
   # Configure the order of complementary content on blog posts
   post_addons:         [about, newsletter, related, random, comments]
