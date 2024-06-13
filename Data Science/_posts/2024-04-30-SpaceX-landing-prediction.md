@@ -2,7 +2,7 @@
 layout: post
 title: Predict SpaceX rocket landing success using Machine Learning
 image: 
-  path: /assets/img/blog/predict-spaceX-landind/spacex_p.jpg
+  path: /assets/img/blog/predict-spaceX-landind/space_x-min.jpg
   width: 800
   height: 600
 description: >
