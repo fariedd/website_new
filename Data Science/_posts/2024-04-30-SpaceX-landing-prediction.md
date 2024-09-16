@@ -13,7 +13,7 @@ hide_last_modified: true
 ---
 
 
-[![](https://img.shields.io/badge/GitHub-View_in_GitHub-blue?logo=GitHub)](https://github.com/fariedd/IBM-DataScience-SpaceX-Capestone)
+[![](https://img.shields.io/badge/GitHub-View_in_GitHub-blue?logo=GitHub)](https://github.com/fariedd/IBM-DataScience-SpaceX-Capestone){:target="_blank"}
 
 **Failure is an option here. If things are not failing, you are not innovating enough** ~ *Elon Musk*.
 * toc
@@ -25,14 +25,14 @@ hide_last_modified: true
 
 Going to space has always been a very expensive venture and SpaceX advertises Falcon 9 rocket launches on its website with a cost of 62 million dollars while other providers cost upward of 165 million dollars each, much of the savings is because since 2014 Space X has manage to successfully recover first stage rocket launched vehicles. This has made Space X rockets comparatively cheaper because their rockets are reusable. Although the landing success rate has improved over the years, not all rocket have landed successfully. Space X has been collecting data on its landing activities over the years, therefore if we can determine if the first stage will land, we can determine the cost of a launch. This information can be used if an alternate company wants to bid against SpaceX for a rocket launch.
  
-### Methods
+## Methods
 We will be predicting the landing success of Falcon 9 rocket launches and Falcon heavy launches from 2010 to 2021.
-Data was collected by webscraping (*Beautifulsoup*) tables of SpaceX historical launch records from a [Wikipedia](https://en.wikipedia.org/w/index.php?title=List_of_Falcon_9_and_Falcon_Heavy_launches&oldid=1027686922) page. [![](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](https://github.com/fariedd/IBM-DataScience-SpaceX-Capestone/blob/main/jupyter-labs-webscraping%20(1).ipynb).
+Data was collected by webscraping (*Beautifulsoup*) tables of SpaceX historical launch records from a [Wikipedia](https://en.wikipedia.org/w/index.php?title=List_of_Falcon_9_and_Falcon_Heavy_launches&oldid=1027686922) page. [![](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](https://github.com/fariedd/IBM-DataScience-SpaceX-Capestone/blob/main/jupyter-labs-webscraping%20(1).ipynb){:target="_blank"}.
 
-More data on rocket landing outcomes were extracted using SpaceX resting APIs [![](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](https://github.com/fariedd/IBM-DataScience-SpaceX-Capestone/blob/main/jupyter-labs-spacex-data-collection-api_.ipynb).
+More data on rocket landing outcomes were extracted using SpaceX resting APIs [![](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](https://github.com/fariedd/IBM-DataScience-SpaceX-Capestone/blob/main/jupyter-labs-spacex-data-collection-api_.ipynb){:target="_blank"}.
 
 Exploratory data analysis and preparatory feature engineering were implemented on the collected data to also visiualise landing outcome of rocket launches using Pandas and Matplotlib.Machine learning models typically cannot process string variables, so when there are text data within a data set, we would encode them (change them to numbers, typically binary) so that the algorithm can assess the relationship between the variable and the output. We used One Hot Encoding (OHE) from the sklearn.preprocessing library.
- [![](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](https://github.com/fariedd/IBM-DataScience-SpaceX-Capestone/blob/main/jupyter-labs-eda-dataviz%20(1).ipynb).
+ [![](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](https://github.com/fariedd/IBM-DataScience-SpaceX-Capestone/blob/main/jupyter-labs-eda-dataviz%20(1).ipynb){:target="_blank"}.
 
 The detailed landing outcomes of the rockets were reclassified to 1 (landed) and 0 (did not land)
  for analysis, missing values and outliers were removed {add data wrangling notebook}.
@@ -41,7 +41,7 @@ We then implemented four classification machine learning models, Logistic regres
 
 The hyperparameters for each model were optimised using GridSearchCV, it evaluates the model for each combination of hyperparameters using the cross-validation method (cv =10) and chooses the combination with the best performance for each model before fitting.
 
-The data was split into training and testing data, and a confusion matrix was created to show how the trained models can accurately predict the testing data (show false positve vs false negative).  [![](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](https://github.com/fariedd/IBM-DataScience-SpaceX-Capestone/blob/main/SpaceX_Machine_Learning_Prediction_Part_5.jupyterlite%20(1).ipynb).
+The data was split into training and testing data, and a confusion matrix was created to show how the trained models can accurately predict the testing data (show false positve vs false negative).  [![](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](https://github.com/fariedd/IBM-DataScience-SpaceX-Capestone/blob/main/SpaceX_Machine_Learning_Prediction_Part_5.jupyterlite%20(1).ipynb){:target="_blank"}.
 
 #### Model Assesment
 
@@ -56,7 +56,7 @@ Model perfomance and comparison were determined using accuracy score, precision 
 * **F1 Score**: This is the harmonic mean of Precision and Recall. A good F1-score comes when there is a balance between precision and recall.
 
 
-### Results 
+## Results 
 
 The goals of the project was:
 
@@ -73,7 +73,7 @@ Trend in landing success rate of Space X Falcon 9 rockets since 2010, success ra
 
 #### Models Perfomance
 
-Based upon these,all models cna predict the landing success with an accuracy of ~80 acros all matrics excet for Decision Trees which perfomed lower but not singifcantly so
+Based upon these,all models can predict the landing success with an accuracy of ~80 across all matrics except for Decision Trees which perfomed lower but not singifcantly so
 
 
 | Model                  | Accuracy   | Precision  | Recall       |  F1-Score  | 
@@ -94,7 +94,7 @@ Model prediction accuracy for all built classification models, in a bar chart.
 
 
 
-### Discussion, Growth & Next Steps
+## Discussion, Growth & Next Steps
 
 The way we have coded this up is very much for the "proof of concept".  In practice, we would definitely have to use a large data set and incooperate more variables into the model that could improve the predictions. Payloadmass of the rockets was an influential contributer to hte predictions of this model, (in practice we will have to remove and add some variables to see if htey affect the data). In this case removing payloadmass had a significant effect on the predictions, which hints at other factors being added to hte rocket influencing landing success of rockets. Alose inplace of Decision trees we can incooperate a random forest which offer a more complex visualisation option (nodes of classification).
  the last section of the code (where we submit a search) isolated, and running from all of the saved objects that we need - we wouldn't include it in a single script like we have here.

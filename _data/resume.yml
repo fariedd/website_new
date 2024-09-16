@@ -12,9 +12,8 @@ basics:
     Highly motivated, Natural scientist and curious thinker with over 6 years of fieldwork experience, scientific research (synthesising published works),
     breaking down large data and experimenting with different statistical tools to create simple yet insightful stories. l pride myself in having 
     exceptional communication and interpersonal skills with a proven ability to work independently and as part of a team. l am an analytical individual and 
-    life-long learner with a keen interest in data science, machine learning and data visualisation. 
-   
-   
+    life-long learner with a keen interest in data science, machine learning and data visualisation. | **CLICK BELOW TO VIEW RESUME**
+    
     
   profiles:
     - network: "GitHub"
@@ -23,66 +22,66 @@ basics:
     - network: "LinkedIn"
       username: "Farisayi Dakwa"
       url: "https://linkedin.com/in/farisayi-e-dakwa/"
-work:
-  - company: "Imvelo Blue Environmental Consultancy"
-    position: "Data Analyst"
+#work:
+  #- company: "Imvelo Blue Environmental Consultancy"
+  #  position: "Data Analyst"
     #website: "https://petronascanada.com"
-    startDate: "2023-03-01"
-    endDate: ""
-    highlights: 
-     - "Used geospatial tools to determine fishing activity and productivity by creating maps that track the movement of fishing vessels using coordinate data." 
-     - "Created visualisations to summarise fisheries catch data (length, weight, diversity) to improve knowledge on fishing population distribution and productivity." 
-     - "Prepared detailed reports and scientific data presentations to summarise annual progressions."
+  #  startDate: "2023-03-01"
+  #  endDate: ""
+  #  highlights: 
+   #  - "Used geospatial tools to determine fishing activity and productivity by creating maps that track the movement of fishing vessels using coordinate data." 
+    # - "Created visualisations to summarise fisheries catch data (length, weight, diversity) to improve knowledge on fishing population distribution and productivity." 
+    # - "Prepared detailed reports and scientific data presentations to summarise annual progressions."
 
-  - company: "Bayworld Center for Research and Education"
-    position: "Quantitative Scientist"
+  #- company: "Bayworld Center for Research and Education"
+  #  position: "Quantitative Scientist"
     #website: "https://sinopeccanada.com"
-    startDate: "2021-12-01"
-    endDate: "2023-12-25"
-    highlights:
-    - Collaborated with cross-functional teams to prepare a multinational biodiversity assessment report and publish papers.
-    - Designed and trained machine learning models (using R packages like Caret and randomForest) to predict seabird species distribution maps using spatial data and multidimensional environmental satellite data.
-    - Developed custom scripts for data preprocessing, transformation, and feature engineering to investigate the impact of climate change on species distribution using satellite environmental data.
+  #  startDate: "2021-12-01"
+  #  endDate: "2023-12-25"
+  #  highlights:
+  #  - Collaborated with cross-functional teams to prepare a multinational biodiversity assessment report and publish papers.
+  #  - Designed and trained machine learning models (using R packages like Caret and randomForest) to predict seabird species distribution maps using spatial data and multidimensional environmental satellite data.
+  #  - Developed custom scripts for data preprocessing, transformation, and feature engineering to investigate the impact of climate change on species distribution using satellite environmental data.
     
 
-education:
-  - institution: "University of Cape Town"
-    area: "Conservation Biology"
-    studyType: "Quantitative Masters by Research"
-    startDate: "2019-06-01"
-    endDate: "2021-11-01"
-    courses: "Two year research project, long-term data analysis (50 years) on two endangered species to determinethe effect of climate change and environmental variables on their population trends and behavior using robust Bayesian models in R."
+#education:
+#  - institution: "University of Cape Town"
+#    area: "Conservation Biology"
+#    studyType: "Quantitative Masters by Research"
+#    startDate: "2019-06-01"
+#    endDate: "2021-11-01"
+#    courses: "Two year research project, long-term data analysis (50 years) on two endangered species to determinethe effect of climate change and environmental variables on their population trends and behavior using robust Bayesian models in R."
     
 
-skills:
-  - name: "Data Science/Machine Learning"
-    keywords:
-      - "R"
-      - "Python"
-      - "SQL"
-      - "Caret"
-      - "Pandas"
-      - "sklearn"
-      - "Tensorflow"
-  - name: 'Data Analytics/Visualization'
-    keywords:
-      - "Tableau"
-      - "Seaborn"
-      - "ggplot2"
-      - "Plotly"
-      - "Matplotlib"
+#skills:
+#  - name: "Data Science/Machine Learning"
+#    keywords:
+#      - "R"
+#      - "Python"
+#      - "SQL"
+#      - "Caret"
+#      - "Pandas"
+#      - "sklearn"
+#      - "Tensorflow"
+#  - name: 'Data Analytics/Visualization'
+#    keywords:
+#      - "Tableau"
+#      - "Seaborn"
+#      - "ggplot2"
+#      - "Plotly"
+#      - "Matplotlib"
 
-awards:
-  - title: "IBM Data Science Professional Certificate"
-    date: "2024-04-30"
-    awarder: "IBM"
-    url: "https://www.coursera.org/account/accomplishments/professional-cert/PH88WRNHQD46"
+#awards:
+  #- title: "IBM Data Science Professional Certificate"
+  #  date: "2024-04-30"
+  #  awarder: "IBM"
+  #  url: "https://www.coursera.org/account/accomplishments/professional-cert/PH88WRNHQD46"
 
       
 
-languages:
-  - language: "English"
-    fluency: "Native speaker"
+#languages:
+#  - language: "English"
+#    fluency: "Native speaker"
 
 
 
