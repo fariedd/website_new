@@ -302,4 +302,4 @@ product_sales = pd.read_csv('ProductDataChallenge_01_ProductSales_thanksgiving_w
 # Predict categories for unlabeled data
 product_sales['target_label'] = pipeline_2.predict(product_sales['item_name'])
 ```
-An interaction Shiny dashboard was created showcasing Product sales KPIs, trends and business recommendations. For more information click here
+An interaction Shiny dashboard was created showcasing Product sales KPIs, trends and business recommendations. For more information click  <a href = 'https://fariedakwa.netlify.app/blog/sales-trends-analysis/' target ='_blank' > here</a>
