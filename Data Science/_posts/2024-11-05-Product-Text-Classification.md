@@ -25,14 +25,12 @@ hide_last_modified: true
 
 ## Introduction
 
-E-commerce (electronic commerce) is the activity of electronically buying or selling of products on online services or over the Internet.Product categorization or product classification is a type of economic taxonomy that refers to a system of categories into which a collection of products would fall under. Product categorization groups products into distinct, hierarchical categories. This ensures that e-commerce platforms can quickly determine if a user's search query matches your website's products, based on product categorization. This enhances user experience, visitors can quickly find the products they need by navigating the catalogue or using external search engine i.e Google.
-### Problem Statement
+In this project, I developed a deployable machine learning product classification model for a B2B e-commerce company struggling with incomplete category information in their product catalog. The objective was to enhance the accuracy and efficiency of sales product categorization, ultimately improving the user experience on their website. The task involved building a text classification model to predict missing category data based on product descriptions. A significant challenge was dealing with category data in multiple formats, some of which did not align with the <a href="https://support.google.com/merchants/answer/6324436?hl=en#Format&zippy=%2Capparel-products" target="_blank">Google product taxonomy format</a>. I started by analyzing the dataset to identify and extract rows that conformed to the Google taxonomy, applying natural language processing techniques to clean the text data and enrich the training set. The resulting model was trained to accurately classify new products into the correct categories, improving data consistency and streamlining product management.
 
- <em> Categorise products offered on e-commerce platforms based on the descriptions of the products mentioned therein<em>
-
- The objective of this project is to create a model that can classify products into categories based on the description of the products on e-commerce platforms. Products will be categorised using <a href="https://support.google.com/merchants/answer/6324436?hl=en#Format&zippy=%2Capparel-products" target="_blank">Google product taxonomy format</a>
 
 ### Data Overview
+
+The key variables to categorise products will come from one table contain incosistantly categorised products that will be cleaned to created a final dataset for modelling.
 
 <style>
   table {
@@ -82,7 +80,9 @@ product_taxanomy.head(6)
 
 ## Methods & Data Cleaning
 
-We filtered out products not in google taxanomy format. Taxanomy data was downloaded <a href = 'https://support.google.com/merchants/answer/6324436?sjid=11384066497760467600-EU' target ='_blank' > here</a>
+The client wants to standadise product categorisation using google taxanomy format. Taxanomy data was downloaded <a href = 'https://support.google.com/merchants/answer/6324436?sjid=11384066497760467600-EU' target ='_blank' > here</a>
+Firstly l filtered out products not in google taxanomy format and then remove duplicates.
+
 ``` python
 # Clean product taxonomy file match it to google merchant catalogue 
 google_catalogue = pd.read_csv('taxonomy-with-ids-template.csv')
@@ -104,7 +104,7 @@ new_taxanomy =product_taxanomy.merge(google_catalogue[['id','original_format_cat
 #remove categories not in google catalogue format
 new_taxanomy.dropna(subset=["id"],inplace=True)
 ```
-We removed duplicate products because we assumed that each product belongs to one category, this could affect the prediction of unseen products
+l removed duplicate products because l assumed that each product belongs to one category, this could affect the prediction of unseen products
 
 ```python
 # Check for dupllicates
@@ -119,6 +119,9 @@ zz =new_taxanomy.groupby('item_name').size()
 zz[zz > 1].sort_values(ascending=False).reset_index()# double check
 ```
 ### **Text Normalisation**
+
+l normalized text before inputting it into a predictive model to ensure consistency and remove noise. This helps the model focus on meaningful patterns, improving accuracy and performance. l preprocessed the data by removing non-alphanumeric characters, stripping whitespace, and converting text to lowercase. 
+
 ``` python
 import requests
 import pandas as pd
@@ -141,26 +144,15 @@ def clean_text(text):
 
 new_taxanomy['new_name'] = new_taxanomy['item_name'].apply(clean_text)
 ```
-Because of the size of the data...
-
-``` python
-#count number of unique values
-print(f'Number of product categories: {new_taxanomy["target_label"].nunique()} ' ) 
-print(f'Number of product items: {new_taxanomy["new_name"].nunique()} ' ) 
-
-Number of product categories: 2871 
-Number of product items: 577600 
-
-```
-We used a Multinomial Naive Bayes for product classification because it is both robust (*it can handle multidimensional text data*) and efficient (*it can handle large data and is not computationally intensive*)
 
 ## Model Training & Pipeline
 
-We created a pipe line with `TfidfVectorizer()`, `MultinomialNB()` and `GridSearchCV` for optimal model parameters
+l created a two-level preprocessing and modeling pipeline, employing `TfidfVectorizer()` for transforming text data into term-frequency inverse document frequency (TF-IDF) vectors and `MultinomialNB()` for the Naive Bayes classification. Additionally, l utilized` GridSearchCV` to perform hyperparameter tuning for optimal model parameters. This pipeline ensured efficient text normalization and robust classification performance.
 
-### **TF-IDF**
+**TF-IDF (Term Frequency-Inverse Document Frequency)** is a powerful technique in Natural Language Processing used to convert text data into a statistically interpratable numerical feature vector that reflects the significance of a word within a document relative to a collection of documents, known as a corpus. It assigns a numerical value to each word (*TF-IDF score*) that quantifies the importance of each term (*word*) in a document (*string of product item name description*) by considering its frequency in the document and its rarity across multiple documents. The will then be used by machine learning model to categorise the products and hten convert the numerica feature vector back into text 
 
-**TF-IDF (Term Frequency-Inverse Document Frequency)** is a powerful technique in Natural Language Processing used to create a statistical numerical feature vector that reflects the significance of a word within a document relative to a collection of documents, known as a corpus. It assigns a numerical value to each word (*TF-IDF score*) that quantifies the importance of each term (*word*) in a document (*string of product item name description*) by considering its frequency in the document and its rarity across multiple documents.
+### TF-IDF Score:
+$$ \text{TF-IDF}(t, d) = \text{TF}(t, d) \times \text{IDF}(t) $$
 
 ### Term Frequency (TF):
 
@@ -182,8 +174,18 @@ $$ \text{IDF}(t) = \log \left(\frac{\text{Total number of documents}}{\text{Numb
 
 **Purpose**: Assigns higher weights to terms that are rare across the corpus, reducing the impact of common terms.
 
-### TF-IDF Score:
-$$ \text{TF-IDF}(t, d) = \text{TF}(t, d) \times \text{IDF}(t) $$
+Because of the size of the data...
+
+``` python
+#count number of unique values
+print(f'Number of product categories: {new_taxanomy["target_label"].nunique()} ' ) 
+print(f'Number of product items: {new_taxanomy["new_name"].nunique()} ' ) 
+
+Number of product categories: 2871 
+Number of product items: 577600 
+
+```
+l used a Multinomial Naive Bayes for product classification because it is both robust (it can handle multidimensional text data) and efficient (it can handle large data and is not computationally intensive). After applying TfidfVectorizer(), which converts text data into numerical TF-IDF vectors, the Multinomial Naive Bayes algorithm becomes more accurate in distinguishing between different product categories based on textual features.
 
 ### Model Implementation
 
@@ -233,7 +235,7 @@ Test set accuracy:  0.8747221573562354
 ## Results
 ### Final Model
 
-We employed the model with the highest cross-validation and test accuracy 
+l employed the model with the highest cross-validation and test accuracy 
 
 ``` python
 #Best model parameter
@@ -249,7 +251,7 @@ pipeline_2 = Pipeline([
 ```
 ### Evaluation and Prediction
 
-To evaluate our model, we used precision, recall, F1-score, and accuracy. We also calculated macro and micro averages to better understand the model's performance with unbalanced data. **Macro averages** treat all classes equally, providing a balanced view across classes, while **micro averages** consider the frequency of each class, giving a more holistic measure of the overall performance.
+To evaluate our model, l used precision, recall, F1-score, and accuracy. l also calculated macro and micro averages to better understand the model's performance with unbalanced data. **Macro averages** treat all classes equally, providing a balanced view across classes, while **micro averages** consider the frequency of each class, giving a more holistic measure of the overall performance.
 
 ``` python
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
@@ -290,11 +292,15 @@ print(metrics_df)
 Macro Avg    0.88      0.62      0.54      0.56
 Micro Avg    0.88      0.88      0.88      0.88
 </pre>
+ The low macro averages indicates that the model's performance is not consistent across all classes. It suggests that some classes may have lower precision, recall, or F1 scores, potentially due to class imbalance or the model struggling with specific categories.
+ 
+ On the other end high micro average means that the model performs well overall when considering all classes and their frequencies. This reflects strong overall accuracy and suggests that the model correctly identifies a large proportion of instances, even if some individual classes are less well-predicted.
+
+
 
 ## PART 2
 
-The Product classifaction model was used to categorise product sales
-
+Due to high traffic during Black Friday week, the product classification model was used to categorize products. Sales data was analyzed to reveal valuable trends in buying patterns, such as popular products, peak shopping times, and discrepancies between regional sales.
 ``` python
 import pandas as pd
 product_sales = pd.read_csv('ProductDataChallenge_01_ProductSales_thanksgiving_week.csv')

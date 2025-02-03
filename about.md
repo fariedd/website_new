@@ -7,8 +7,13 @@ description: >
 hide_description: true
 ---
 
-My name is Farisayi Dakwa, and I am a Natural Scientist who loves data. My job mainly involves observing and experimenting, employing a multidisciplinary approach to address environmental challenges and promote sustainable practices. Identify a problem, create a hypothesis, collect data on the issue, clean and analyse large amounts of data, visualise, interpret, and extract insights from the data to provide strategies for protecting and restoring biodiversity. During my internship as an undergrad, I got introduced to data visualisation and predictive modelling using R (l started in R but ended up in Python). I took statistics courses and l found myself wanting to engage more in data analysis and coding, l even took on a masters by research which was purely quantitative analysis (50 years of data) on endangered species in the Southern Ocean which opened up a new world of possibilities. So naturally, l decided to lean into it, dive fully into the world of data science, and deepen my knowledge of everything data.
-This portfolio shows the projects l have completed, documentation of data skills, and learnings as l go deeper into this world. It is an exciting journey and l plan to keep adding to it. 
+I'm Farisayi Dakwa, a Natural Scientist turned Data Scientist, leveraging a multidisciplinary background to solve complex data problems. My work has always been rooted in observation, experimentation, and analysis—whether tackling environmental challenges or driving data-driven decision-making in business.
+
+My transition into data science started during my undergraduate internship, where I was introduced to data visualization and predictive modeling using R. That curiosity led me to take on a quantitative research-based master’s degree, analyzing 50 years of ecological data on endangered species in the Southern Ocean. Working with large datasets, time-series analysis, and machine learning pipelines opened up a new world of possibilities, and I fully embraced the shift into data science and analytics.
+
+Now, I specialize in machine learning, statistical modeling, and data engineering, working with Python, R, SQL, and cloud-based tools to extract insights and build scalable solutions. My portfolio showcases real-world projects, from automated product classification models to interactive sales analytics dashboards, demonstrating my ability to blend scientific rigor with business impact.
+
+This space is a living document of my journey—projects I’ve completed, methodologies I’ve explored, and new skills I’m developing. I'm always diving deeper into data science, MLOps, and AI-driven solutions, and I look forward to collaborating, learning, and pushing the boundaries of what data can do.
 
 **So, welcome,** 
 *Have questions about your data? l have answers.*

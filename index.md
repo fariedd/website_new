@@ -6,7 +6,7 @@ cover: true
 ---
 
 
-My name is **Farisayi** _(fah-rii-sai-ee)_. I am a Natural Scientist that loves data and problem-solving. This website is a portfolio (my technical journal if you will) of *projects* I have completed, *skills and technics* I feel inclined to wax eloquent about.
+My name is **Farisayi** _(fah-rii-sai-ee)_. I am a Natural Scientist turned Data Scientist that loves data and problem-solving. This website is a portfolio (my technical journal if you will) of *projects* I have completed, *skills and technics* I feel inclined to wax eloquent about.
 
 Welcome! l hope you enjoy your visit... 
 
